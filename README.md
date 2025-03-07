@@ -1,18 +1,18 @@
 # Image-Colorization
 # Image Colorization and Enhancement using DeOldify
 
-## 📌 Project Overview
+## Project Overview
 
 This project focuses on **image colorization and enhancement** using **DeOldify**, a state-of-the-art deep learning model based on Generative Adversarial Networks (GANs). The project takes grayscale images and colorizes them while also enhancing the details for a more visually appealing output.
 
-## 🚀 Features
+## Features
 
 - **Upload grayscale images for colorization**
 - **Automatic image enhancement** to improve quality
 - **Comparison display**: Side-by-side visualization of grayscale and colorized images
 - **Uses DeOldify (Pretrained GAN model)**
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### 🔹 Step 1: Clone the Repository
 
@@ -34,9 +34,9 @@ This project focuses on **image colorization and enhancement** using **DeOldify*
 !wget -O ./models/ColorizeArtistic_gen.pth https://data.deepai.org/deoldify/ColorizeArtistic_gen.pth
 ```
 
-## 📌 Usage Instructions
+## Usage Instructions
 
-### ✅ Upload and Colorize an Image
+### Upload and Colorize an Image
 
 ```python
 from deoldify.visualize import get_image_colorizer
@@ -44,7 +44,7 @@ colorizer = get_image_colorizer(artistic=True)
 colorizer.plot_transformed_image('input.jpg', render_factor=35, display_render_factor=True)
 ```
 
-### ✅ Enhance the Colorized Image
+### Enhance the Colorized Image
 
 ```python
 import cv2
@@ -59,7 +59,7 @@ def enhance_image(image_path):
     cv2.imwrite('enhanced.jpg', enhanced_img)
 ```
 
-### ✅ Display Comparison (Grayscale vs. Colorized)
+###  Display Comparison (Grayscale vs. Colorized)
 
 ```python
 import matplotlib.pyplot as plt
@@ -94,7 +94,7 @@ compare_images('input.jpg', 'enhanced.jpg')
 │   ├── README.md             # Documentation
 ```
 
-## 🤖 Technologies Used
+## Technologies Used
 
 - **Python**
 - **PyTorch**
@@ -102,17 +102,17 @@ compare_images('input.jpg', 'enhanced.jpg')
 - **Matplotlib**
 - **DeOldify (GAN-based model)**
 
-## 🎯 Future Enhancements
+##  Future Enhancements
 
 - Implement real-time video colorization
 - Develop a web-based interface using Flask or Streamlit
 
-## 👨‍💻 Author & Credits
+## Author & Credits
 
 - **DeOldify Developers** for the original implementation
 - **Satish Tirumala** for customization & enhancement
 
-## 🌟 Acknowledgments
+##  Acknowledgments
 
 This project is built using **DeOldify** and **DeepAI’s pretrained models**.
 
